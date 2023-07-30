@@ -1,0 +1,305 @@
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #fff, #fff);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #fff, #fff);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.login-block {
+    float: left;
+    width: 100%;
+    height: 100vh;
+    /* padding: 40px 0; */
+}
+
+.form-control:focus {
+    border-color: #AE7866;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(0, 140, 255, 0.6);
+}
+
+.login-wrapper {
+    background-color: #f3f3f3;
+    width: 100vw;
+    height: 100%;
+}
+
+.login-wrapper input {
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.login-wrapper input::placeholder {
+    color: #bbb;
+    font-size: 12px;
+}
+
+.login-wrapper label {}
+
+.carousel-caption {
+    text-align: left;
+    left: 5%;
+}
+
+.login-sec {
+    overflow: auto;
+    padding: 170px 70px 70px 70px;
+    position: relative;
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.login-sec::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+}
+
+.login-sec::-webkit-scrollbar-thumb {
+    background-color: #F3F3F3;
+    border-radius: 4px;
+}
+
+.login-sec:hover::-webkit-scrollbar-thumb {
+    background-color: #eee !important;
+}
+
+.login-sec:hover::-webkit-scrollbar {
+    display: block;
+}
+
+
+
+.banner-sec {
+    background-color: #70413218;
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.text-uppercase {
+    font-family: sans-serif;
+    font-size: 12px;
+}
+
+.forgot {
+    transition: all .5s ease;
+    display: inline-block;
+    margin-left: 170px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.forgot:hover {
+    transform: scale(1.1);
+}
+
+.login-sec .copy-text {
+    position: absolute;
+    width: 80%;
+    bottom: 20px;
+    font-size: 13px;
+    text-align: center;
+}
+
+.login-sec .copy-text a {
+    color: #ffffff;
+    cursor: pointer;
+    -webkit-transition: all .40s ease-in-out;
+    -moz-transition: all .40s ease-in-out;
+    -ms-transition: all .40s ease-in-out;
+    -o-transition: all .40s ease-in-out;
+    transition: all .40s ease-in-out;
+}
+
+.login-sec .copy-text a:hover {
+    color: #AE7866;
+    text-decoration: underline;
+}
+
+.login-sec h2 {
+    margin-bottom: 20px;
+    font-weight: 800;
+    font-size: 30px;
+    color: #AE7866;
+}
+
+
+
+.login-button {
+    background: #AE7866;
+    border: 1px solid transparent;
+    color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+    background: -webkit-linear-gradient(right, #AE7866, #7e4e3e, #AE7866);
+    background: -o-linear-gradient(right, #AE7866, #AE7866, #AE7866);
+    background: linear-gradient(right, #AE7866, #AE7866, #AE7866);
+    background-size: 250% 100%;
+    background-position: 100% 50%;
+    transition: 0.6s;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.btn-socialite {
+    /* border: 1px solid #6e3535; */
+}
+
+.btn-socialite:hover {
+    background-color: #6e35351a;
+}
+
+.main-radius {
+    border-radius: 13px;
+}
+
+.text-main {
+    color: #7e4e3e;
+}
+
+.btn {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+.login-button:hover,
+.login-button:focus {
+    background-position: 0% 50%;
+    transition: 0.6s;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 1200px) {
+    .login-wrapper {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .login-wrapper {
+        width: 100% !important;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .login-block {
+        padding: 0;
+    }
+
+    body {
+        align-items: stretch;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .col-md-4.login-sec {
+        float: left;
+        padding: 30px 30px;
+        flex: 0 0 100%;
+        min-width: 100%
+    }
+
+    .login-wrapper {
+        width: 90%;
+    }
+
+    .banner-sec {
+        display: none !important;
+    }
+}
+
+.google-color {
+    background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+
+
+/* divider */
+
+
+/* Base styles */
+.or::before,
+.or::after {
+    content: "";
+}
+
+/*
+    Vertical
+    Requires a height to be set on this element or its parent.
+*/
+.or--y {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100%;
+}
+
+/*
+    Absolutely position each pseudo element, and calculate
+    a height shorter than 50% using em units to create space
+    around the text and allows divider line height to scale
+    based on parent element divider height.
+*/
+.or--y::before,
+.or--y::after {
+    position: absolute;
+    border-left: 1px solid #ccc;
+    height: calc(50% - 0.85em);
+    left: 50%;
+    margin-left: -1px;
+}
+
+/* ::before on top */
+.or--y::before {
+    top: 0;
+}
+
+/* ::after on bottom */
+.or--y::after {
+    bottom: 0;
+}
+
+/* Horizontal */
+.or--x::before,
+.or--x::after {
+    position: relative;
+    border-top: 1px solid #ccc;
+    display: inline-block;
+    vertical-align: middle;
+    width: 40%;
+    margin-bottom: 0.15em;
+    overflow: hidden;
+}
+
+.or--x::before {
+    right: 0.5em;
+    margin-left: -50%;
+}
+
+.or--x::after {
+    left: 0.5em;
+    margin-right: -50%;
+}
