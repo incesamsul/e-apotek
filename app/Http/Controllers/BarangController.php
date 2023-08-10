@@ -47,6 +47,7 @@ class BarangController extends Controller
             'nama_barang' => $request->nama_barang,
             'deskripsi' => $request->deskripsi,
             'harga' => $request->harga,
+            'stok' => $request->stok,
             'id_kategori' => $request->id_kategori,
             'gambar' => $imageName,
         ]);
@@ -65,6 +66,7 @@ class BarangController extends Controller
                 'nama_barang' => $request->nama_barang,
                 'deskripsi' => $request->deskripsi,
                 'harga' => $request->harga,
+                'stok' => $request->stok,
                 'id_kategori' => $request->id_kategori,
                 'gambar' => $imageName,
             ]);
@@ -73,6 +75,7 @@ class BarangController extends Controller
                 'nama_barang' => $request->nama_barang,
                 'deskripsi' => $request->deskripsi,
                 'harga' => $request->harga,
+                'stok' => $request->stok,
                 'id_kategori' => $request->id_kategori,
             ]);
         }

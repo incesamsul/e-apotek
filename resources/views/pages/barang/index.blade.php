@@ -47,6 +47,11 @@
                                     name="harga" id="harga">
                             </div>
                             <div class="form-group">
+                                <label for="stok">stok</label>
+                                <input value="{{ $edit ? $edit->stok : '' }}" required type="text" class="form-control"
+                                    name="stok" id="stok">
+                            </div>
+                            <div class="form-group">
                                 <button class="btn bg-main text-white">Simpan</button>
                             </div>
                         </form>
@@ -78,6 +83,7 @@
                                 <h5>{{ $row->nama_barang }}</h5>
                                 <small class="text-second">{{ $row->deskripsi }}</small>
                                 <h6 class="mt-2">Rp. {{ number_format($row->harga) }}</h6>
+                                <p>stok : {{ $row->stok }}</p>
                             </div>
                         </div>
                         <a href="{{ URL::to('admin/hapus_barang/' . $row->id_barang) }}"
