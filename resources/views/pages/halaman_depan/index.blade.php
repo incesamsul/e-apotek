@@ -33,7 +33,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
         <div class="container">
-            <a class="navbar-brand" href="index.html">E-apotek<span>.</span></a>
+            <a class="navbar-brand" href="index.html">apotek<span>.</span></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
                 aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="oi oi-menu"></span> Menu
@@ -60,14 +60,14 @@
             <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-start"
                 data-scrollax-parent="true">
                 <div class="col-xl-6 ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-                    <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"> E-Apotek
+                    <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"> apotek
                         <br><span>APT. Wahid Farma</span>
                     </h1>
-                    <p class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">E-apotek | Point
+                    <p class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">apotek | Point
                         of sales | Inventory
                     </p>
                     <div id="timer">
-                        <small class="text-sm">E-apotek, point of sales and inventory of apt wahid farma.</small>
+                        <small class="text-sm">apotek, point of sales and inventory of apt wahid farma.</small>
                     </div>
                     <!-- <div id="timer" class="d-flex mb-3">
       <div class="time" id="days"></div>

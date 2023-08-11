@@ -26,7 +26,7 @@
         <div class="container-fluid login-wrapper ">
             <div class="row login-row">
                 <div class="col-md-4 login-sec ">
-                    <h2><a href="{{ URL::to('/') }}" class="text-main">E-apotek</a></h2>
+                    <h2><a href="{{ URL::to('/') }}" class="text-main">apotek</a></h2>
                     <p class="text-secondary"><small>APT. Wahid farma, login untuk melanjutkan</small></p>
                     {{-- <p class="text-secondary"><small>login dengan google atau masukkan kredensial anda</small></p> --}}
                     @if (session('fail'))
@@ -66,7 +66,7 @@
                 </div>
                 <div class="col-md-8 banner-sec d-flex flex-column text-center">
                     <img src="{{ asset('img/svg/ilustration/med.svg') }}" alt="" width="500">
-                    <p class="text-secondary"><strong>E-apotek</strong></p>
+                    <p class="text-secondary"><strong>apotek</strong></p>
                     <small class="pb-5 text-secondary">Online pharmacy, inventory , all in one system.</small>
                 </div>
             </div>
