@@ -1,7 +1,7 @@
-<li class="" id="liPos" data-toggle="tooltip" title="Pos" data-placement="right">
+<li class="" id="liPos" data-toggle="tooltip" title="Transaksi" data-placement="right">
     <a class="nav-link" href="{{ URL::to('/kasir/pos') }}">
         <i class="fa-regular fa-handshake"></i>
-        <span>Pos</span>
+        <span>Transaksi</span>
     </a>
 </li>
 
