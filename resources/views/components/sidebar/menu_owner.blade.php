@@ -4,3 +4,10 @@
         <span>Laporan Transaksi </span>
     </a>
 </li>
+
+
+<li class="" id="libarang" data-toggle="tooltip" title="Kelola barang" data-placement="right">
+    <a class="nav-link" href="{{ URL::to('/admin/barang') }}">
+        <i class="fas fa-stethoscope"></i> <span>Stok Barang</span>
+    </a>
+</li>
