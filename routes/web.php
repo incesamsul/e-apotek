@@ -86,7 +86,7 @@ Route::group(['middleware' => ['auth', 'ceklevel:Administrator']], function () {
 
 
 // KASIR ROUTE
-Route::group(['middleware' => ['auth', 'ceklevel:Administrator,kasir']], function () {
+Route::group(['middleware' => ['auth', 'ceklevel:Administrator,kasir,owner']], function () {
     Route::group(['prefix' => 'kasir'], function () {
         // GET REQUEST
 

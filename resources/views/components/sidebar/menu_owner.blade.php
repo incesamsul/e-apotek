@@ -1,5 +1,5 @@
 <li class="" id="liTransaksiPos" data-toggle="tooltip" title="Laporan Transaksi " data-placement="right">
-    <a class="nav-link" href="{{ URL::to('/owner/transaksi_pos') }}">
+    <a class="nav-link" href="{{ URL::to('/kasir/transaksi_pos') }}">
         <i class="fa-regular fa-rectangle-list"></i>
         <span>Laporan Transaksi </span>
     </a>
