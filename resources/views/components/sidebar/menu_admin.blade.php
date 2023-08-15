@@ -15,11 +15,11 @@
         <span>Kategori</span>
     </a>
 </li>
-<li class="" id="libarang" data-toggle="tooltip" title="Kelola barang" data-placement="right">
+{{-- <li class="" id="libarang" data-toggle="tooltip" title="Kelola barang" data-placement="right">
     <a class="nav-link" href="{{ URL::to('/admin/barang') }}">
         <i class="fas fa-stethoscope"></i> <span>Stok Barang</span>
     </a>
-</li>
+</li> --}}
 <li class="" id="liPos" data-toggle="tooltip" title="Transaksi" data-placement="right">
     <a class="nav-link" href="{{ URL::to('/kasir/pos') }}">
         <i class="fa-regular fa-handshake"></i>
