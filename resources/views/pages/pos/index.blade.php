@@ -61,12 +61,18 @@
                                             <div class="detail-wrapper ml-4">
                                                 <h5>{{ $row->nama_barang }}</h5>
                                                 <small class="text-second">{{ $row->deskripsi }}</small>
+                                                <br><small class="text-second">Stok : {{ $row->stok }}</small>
                                                 <h6 class="mt-2">Rp. {{ number_format($row->harga) }}</h6>
                                             </div>
                                         </div>
-                                        <button data-path="{{ asset('data/gambar_barang/') }}"
-                                            data-pesanan='@json($row)'
-                                            class="mt-4 second-radius btn bg-main text-white btn-pesan">Tambah</button>
+                                        @if ($row->stok < 1)
+                                            <button class="mt-4 second-radius btn btn-secondary text-white btn-pesan">Stok
+                                                habis</button>
+                                        @else
+                                            <button data-path="{{ asset('data/gambar_barang/') }}"
+                                                data-pesanan='@json($row)'
+                                                class="mt-4 second-radius btn bg-main text-white btn-pesan">Tambah</button>
+                                        @endif
                                     </div>
                                 </div>
                             @endforeach

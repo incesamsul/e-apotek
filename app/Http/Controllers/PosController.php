@@ -113,6 +113,12 @@ class PosController extends Controller
                 'id_barang' => $row['id_barang'],
                 'qty' => $row['qty']
             ]);
+
+            $barang = Barang::where('id_barang', $row['id_barang']);
+            $lastStok = $barang->first();
+            $barang->update([
+                'stok' => $lastStok->stok - $row['qty']
+            ]);
         }
         return 1;
     }
