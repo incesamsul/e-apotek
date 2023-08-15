@@ -8,8 +8,14 @@
                     <h4>Dashboard</h4>
                 </div>
                 <div class="card-body">
-                    <h5>Hi, Selamat Datang Admin</h5>
-
+                    <h5>Hi, Selamat Datang {{ auth()->user()->name }}</h5>
+                    <form class="d-flex align-items-center">
+                        <input type="date" name="tgl_mulai" id="tgl_mulai" class="form-control col-sm-4 my-3">
+                        <input type="date" name="tgl_akhir" id="tgl_akhir" class="ml-2 form-control col-sm-4 my-3">
+                        <button type="submit" class="ml-2 py-2 btn bg-main text-white">
+                            <i class="fas fa-sync"></i>
+                        </button>
+                    </form>
                 </div>
             </div>
         </div>
@@ -26,7 +32,7 @@
                         <h4>Total Admin</h4>
                     </div>
                     <div class="card-body">
-                        10
+                        {{ count($total_admin) }}
                     </div>
                 </div>
             </div>
@@ -41,7 +47,7 @@
                         <h4>Total Barang</h4>
                     </div>
                     <div class="card-body">
-                        42
+                        {{ count($total_barang) }}
                     </div>
                 </div>
             </div>
@@ -56,7 +62,7 @@
                         <h4>Barang masuk</h4>
                     </div>
                     <div class="card-body">
-                        12
+                        {{ $total_barang_masuk }}
                     </div>
                 </div>
             </div>
@@ -71,7 +77,7 @@
                         <h4>Barang keluar</h4>
                     </div>
                     <div class="card-body">
-                        47
+                        {{ $total_barang_keluar }}
                     </div>
                 </div>
             </div>

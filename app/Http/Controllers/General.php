@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
-
+use App\Models\Barang;
+use App\Models\TagihanPos;
+use App\Models\TransaksiPos;
 use App\Models\User;
 use Illuminate\Http\Request;
 
@@ -20,7 +22,20 @@ class General extends Controller
 
     public function dashboard()
     {
-        return view('pages.dashboard.index');
+        $tgl_mulai = isset($_GET['tgl_mulai']) ? $_GET['tgl_mulai'] : null;
+        $tgl_akhir = isset($_GET['tgl_akhir']) ? $_GET['tgl_akhir'] : null;
+        if (!$tgl_mulai) {
+            $data['total_barang'] = Barang::all();
+            $data['total_admin'] = User::where('role', 'Administrator')->get();
+            $data['total_barang_masuk'] = Barang::all()->sum('stok');
+            $data['total_barang_keluar'] = TagihanPos::all()->sum('qty');
+        } else {
+            $data['total_barang'] = Barang::whereBetween('created_at', [$tgl_mulai, $tgl_akhir])->get();
+            $data['total_admin'] = User::where('role', 'Administrator')->get();
+            $data['total_barang_masuk'] = Barang::whereBetween('created_at', [$tgl_mulai, $tgl_akhir])->get()->sum('stok');
+            $data['total_barang_keluar'] = TagihanPos::whereBetween('created_at', [$tgl_mulai, $tgl_akhir])->get()->sum('qty');
+        }
+        return view('pages.dashboard.index', $data);
     }
 
     public function profile()
