@@ -15,16 +15,17 @@
                     class="nav-link" href="{{ URL::to('/dashboard') }}">
                     <i class="fa-regular fa-chart-bar"></i>
                     <span>Dashboard</span></a></li>
-            <li data-toggle="tooltip" title="Profile" data-placement="right" class="" id="liProfile"><a
-                    class="nav-link" href="{{ URL::to('/profile') }}">
-                    <i class="fa-regular fa-user"></i>
-                    <span>Profile</span></a></li>
 
 
 
             @if (auth()->user()->role == 'Administrator')
                 {{-- MENU ADMIN --}}
                 <li class="menu-header">Admin</li>
+                <li data-toggle="tooltip" title="Profile" data-placement="right" class="" id="liProfile"><a
+                        class="nav-link" href="{{ URL::to('/profile') }}">
+                        <i class="fa-regular fa-user"></i>
+                        <span>Profile</span></a></li>
+
                 @include('components.sidebar.menu_admin')
                 {{-- END OF MENU ADMIN --}}
             @endif

@@ -60,14 +60,14 @@
             <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-start"
                 data-scrollax-parent="true">
                 <div class="col-xl-6 ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-                    <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"> apotek
-                        <br><span>APT. Wahid Farma</span>
+                    <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"> Apotek
+                        <br><span>Wahid Farma</span>
                     </h1>
-                    <p class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">apotek | Point
-                        of sales | Inventory
+                    <p class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">apotek | Pos |
+                        Inventory
                     </p>
                     <div id="timer">
-                        <small class="text-sm">apotek, point of sales and inventory of apt wahid farma.</small>
+                        <small class="text-sm">apotek, Pos and inventory of apotek wahid farma.</small>
                     </div>
                     <!-- <div id="timer" class="d-flex mb-3">
       <div class="time" id="days"></div>

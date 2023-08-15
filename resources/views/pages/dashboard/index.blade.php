@@ -53,7 +53,7 @@
                 </div>
                 <div class="card-wrap">
                     <div class="card-header">
-                        <h4>Total Kasir</h4>
+                        <h4>Barang masuk</h4>
                     </div>
                     <div class="card-body">
                         12
@@ -68,7 +68,7 @@
                 </div>
                 <div class="card-wrap">
                     <div class="card-header">
-                        <h4>Online Users</h4>
+                        <h4>Barang keluar</h4>
                     </div>
                     <div class="card-body">
                         47
