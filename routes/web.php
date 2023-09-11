@@ -65,6 +65,7 @@ Route::group(['middleware' => ['auth', 'ceklevel:Administrator,owner,kasir']], f
         Route::get('/kategori/{id_kategori}', [KategoriController::class, 'kategori']);
         Route::get('/barang/main', [BarangController::class, 'main']);
         Route::get('/barang', [BarangController::class, 'barang']);
+        Route::get('/stok_barang', [BarangController::class, 'stokBarang']);
         Route::get('/barang/{id_barang}', [BarangController::class, 'barang']);
 
 

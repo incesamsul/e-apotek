@@ -7,7 +7,7 @@
 
 
 <li class="" id="libarang" data-toggle="tooltip" title="Stok barang" data-placement="right">
-    <a class="nav-link" href="{{ URL::to('/admin/barang') }}">
+    <a class="nav-link" href="{{ URL::to('/admin/stok_barang') }}">
         <i class="fas fa-stethoscope"></i> <span>Stok Barang</span>
     </a>
 </li>

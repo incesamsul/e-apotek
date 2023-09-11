@@ -27,6 +27,17 @@ class BarangController extends Controller
         return view('pages.barang.index', $data);
     }
 
+    public function stokBarang($idBarang = null)
+    {
+        if ($idBarang) {
+            $data['edit'] = Barang::where('id_barang', $idBarang)->first();
+        } else {
+            $data['edit'] = null;
+        }
+        $data['barang'] = Barang::all();
+        $data['kategori'] = Kategori::all();
+        return view('pages.barang.stok', $data);
+    }
 
     // CRUD barang
     public function tambahBarang(Request $request)
