@@ -60,7 +60,7 @@
                             <input name="password" type="password" class="form-control border-0"
                                 placeholder="Masukkan password anda">
                         </div>
-                        {{-- <a href="{{ URL::to('/lupa-kata') }}" class="forgot"><u> Forgot Your Password?</u></a> --}}
+                        {{-- <a hre f="{{ URL::to('/lupa-kata') }}" class="forgot"><u> Forgot Your Password?</u></a> --}}
                         <button type="submit" class="btn btn-block login-button main-radius">Login</button>
                     </form>
                 </div>

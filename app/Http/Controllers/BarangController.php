@@ -9,9 +9,13 @@ use Illuminate\Http\Request;
 class BarangController extends Controller
 {
 
+    public function main()
+    {
+        return view('pages.barang.main');
+    }
 
 
-    public function Barang($idBarang = null)
+    public function barang($idBarang = null)
     {
         if ($idBarang) {
             $data['edit'] = Barang::where('id_barang', $idBarang)->first();
@@ -22,13 +26,6 @@ class BarangController extends Controller
         $data['kategori'] = Kategori::all();
         return view('pages.barang.index', $data);
     }
-
-
-
-
-
-
-
 
 
     // CRUD barang

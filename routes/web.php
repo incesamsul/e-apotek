@@ -63,8 +63,10 @@ Route::group(['middleware' => ['auth', 'ceklevel:Administrator,owner,kasir']], f
         Route::get('/fetch_data', [Admin::class, 'fetchData']);
         Route::get('/kategori', [KategoriController::class, 'kategori']);
         Route::get('/kategori/{id_kategori}', [KategoriController::class, 'kategori']);
+        Route::get('/barang/main', [BarangController::class, 'main']);
         Route::get('/barang', [BarangController::class, 'barang']);
         Route::get('/barang/{id_barang}', [BarangController::class, 'barang']);
+
 
         // CRUD MENU
         Route::post('/tambah_barang', [BarangController::class, 'tambahBarang']);

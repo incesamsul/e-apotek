@@ -13,7 +13,7 @@
             <li class="menu-header">Pengguna</li>
             <li data-toggle="tooltip" title="Dashboard" data-placement="right" class="" id="liDashboard"><a
                     class="nav-link" href="{{ URL::to('/dashboard') }}">
-                    <i class="fa-regular fa-chart-bar"></i>
+                    <i class="fas fa-user"></i>
                     <span>Dashboard</span></a></li>
 
 
