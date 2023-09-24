@@ -63,11 +63,10 @@
                     <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"> Apotek
                         <br><span>Wahid Farma</span>
                     </h1>
-                    <p class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">apotek | Pos |
-                        Inventory
+                    <p class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">apotek
                     </p>
                     <div id="timer">
-                        <small class="text-sm">apotek, Pos and inventory of apotek wahid farma.</small>
+                        <small class="text-sm">apotek wahid farma.</small>
                     </div>
                     <!-- <div id="timer" class="d-flex mb-3">
       <div class="time" id="days"></div>

@@ -67,7 +67,7 @@
                 <div class="col-md-8 banner-sec d-flex flex-column text-center">
                     <img src="{{ asset('img/svg/ilustration/med.svg') }}" alt="" width="500">
                     <p class="text-secondary"><strong>apotek</strong></p>
-                    <small class="pb-5 text-secondary">Online pharmacy, inventory , all in one system.</small>
+                    <small class="pb-5 text-secondary">Online pharmacy, all in one system.</small>
                 </div>
             </div>
     </section>
