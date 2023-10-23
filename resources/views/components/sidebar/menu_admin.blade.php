@@ -1,12 +1,12 @@
-<li data-toggle="tooltip" title="Manajemen user" data-placement="right" class="" id="liPengguna">
+<li data-toggle="tooltip" title="Tambah Pengguna" data-placement="right" class="" id="liPengguna">
     <a class="nav-link" href="{{ URL::to('/admin/pengguna') }}">
         <i class="fa-regular fa-circle-user"></i>
-        <span>Manajemen user</span>
+        <span>Tambah Pengguna</span>
     </a>
 </li>
-<li class="" id="libarang" data-toggle="tooltip" title="Kelola barang" data-placement="right">
+<li class="" id="libarang" data-toggle="tooltip" title="Kelola Obat" data-placement="right">
     <a class="nav-link" href="{{ URL::to('/admin/barang') }}">
-        <i class="fas fa-stethoscope"></i> <span>Kelola Barang</span>
+        <i class="fas fa-stethoscope"></i> <span>Kelola Obat</span>
     </a>
 </li>
 <li class="" id="liKategori" data-toggle="tooltip" title="Kategori" data-placement="right">
@@ -15,9 +15,9 @@
         <span>Kategori</span>
     </a>
 </li>
-<li class="" id="libarang" data-toggle="tooltip" title="Stok barang" data-placement="right">
+<li class="" id="libarang" data-toggle="tooltip" title="Stok Obat" data-placement="right">
     <a class="nav-link" href="{{ URL::to('/admin/stok_barang') }}">
-        <i class="fas fa-stethoscope"></i> <span>Stok Barang</span>
+        <i class="fas fa-stethoscope"></i> <span>Stok Obat</span>
     </a>
 </li>
 <li class="" id="liPos" data-toggle="tooltip" title="Transaksi" data-placement="right">

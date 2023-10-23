@@ -7,8 +7,13 @@
                 <div class="card">
                     <div class="card-header d-flex  justify-content-between">
                         <h4>Transaksi Pos</h4>
-                        <div class="table-tools d-flex justify-content-around ">
-                        </div>
+                        <form class="table-tools d-flex justify-content-around ">
+                            <input type="date" name="tgl_mulai" id="tgl_mulai" class="form-control">
+                            <input type="date" name="tgl_akhir" id="tgl_akhir" class="form-control ml-2">
+                            <button type="submit" class="btn btn-primary ml-2"><i class="fas fa-search"></i></button>
+                            <a href="{{ URL::to('/kasir/transaksi_pos') }}" class="btn btn-secondary ml-2"><i
+                                    class="fas fa-sync"></i></a>
+                        </form>
                     </div>
                     <div class="card-body p-0">
                         <table class="table table-striped table-hover table-user table-action-hover" id="table-data">

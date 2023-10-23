@@ -36,9 +36,16 @@ class PosController extends Controller
     }
 
 
-    public function transaksiPos()
+    public function transaksiPos(Request $request)
     {
-        $data['transaksi'] = TransaksiPos::all();
+        $tglAwal = $request->tgl_mulai;
+        $tglAkhir = $request->tgl_akhir;
+        $query = TransaksiPos::query();
+        if ($tglAwal && $tglAkhir) {
+            $query->whereBetween('tgl_transaksi', [$tglAwal, $tglAkhir]);
+        }
+        $data['transaksi'] = $query->get();
+        // $data['transaksi'] = TransaksiPos::all();
         return view('pages.transaksi.pos', $data);
     }
 
